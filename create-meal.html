@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Создание приёма пищи</title>
+        <link rel="stylesheet"  href="create-meal.css">
+    </head>
+    <body>
+        <header>
+            <h1>Создать приём пищи</h1>
+        </header>
+        <form class="create_meal" name="create-meal" method="post" action="food-intake.html">
+            <label for="date">Дата ввода продукта</label>
+            <input type="date" name="date"><br>
+            <label for="time">Время приёма пищи</label>
+            <input type="time" name="time"><br>
+            <label for="category">Категории продуктов</label>
+            <select name="category">
+                <option disabled selected value="Выберите продукт">Выбрать продукт</option>
+                <optgroup label="Мясо">
+                    <option value="Индейка">Индейка</option>
+                    <option value="Кролик">Кролик</option>
+                    <option value="Говядина">Говядина</option>
+                    <option value="Курица">Курица</option>
+                    <option value="Свинина">Свинина</option>
+                </optgroup>
+                <optgroup label="Овощи">
+                    <option value="Брокколи">Брокколи</option>
+                    <option value="Морковь">Морковь</option>
+                    <option value="Тыква">Тыква</option>
+                </optgroup>
+                <optgroup label="Фрукты">
+                    <option value="Яблоко">Яблоко</option>
+                    <option value="Груша">Груша</option>
+                    <option value="Банан">Банан</option>
+                </optgroup>
+                <optgroup label="Крупы">
+                    <option value="Кукуруза">Кукуруза</option>
+                    <option value="Греча">Греча</option>
+                    <option value="Рис">Рис</option>
+                </optgroup>
+                <optgroup label="Рыба">
+                    <option value="Хек">Хек</option>
+                    <option value="Треска">Треска</option>
+                    <option value="Сёмга">Сёмга</option>
+                </optgroup>
+                <optgroup label="Молочные продукты">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </optgroup>
+            </select><br>
+            <label for="weight">Объём продукта</label>
+            <input type="number" step="0.1" name="weight"><br>
+            <footer>
+                <button>Создать</button>
+            </footer>
+        </form> 
+    </body>
+</html>

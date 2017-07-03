@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    background: rgb(255, 166, 4);
+    padding: .7em 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__title {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.meal-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.meal {
+    margin-bottom: 30px;
+    background: rgb(103, 169, 279);
+}
+
+.meal__when, .meal__what {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal__photo {
+    --image-size: 55px;
+    width: var(--image-size);
+    border-radius: 100%;
+    height: var(--image-size);
+}
